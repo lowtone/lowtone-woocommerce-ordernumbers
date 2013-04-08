@@ -31,7 +31,7 @@ namespace lowtone\woocommerce\ordernumbers {
 
 	Plugin::init(array(
 			Plugin::INIT_PACKAGES => array("lowtone"),
-			Plugin::INIT_MERGE_PATH => __NAMESPACE__
+			Plugin::INIT_MERGED_PATH => __NAMESPACE__
 		));
 
 	add_action("woocommerce_new_order", function($orderId) {
