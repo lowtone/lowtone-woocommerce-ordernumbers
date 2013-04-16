@@ -27,7 +27,7 @@ namespace lowtone\woocommerce\ordernumbers {
 	// Includes
 	
 	if (!include_once WP_PLUGIN_DIR . "/lowtone-content/lowtone-content.php") 
-		return trigger_error("Lowtone Content plugin is required", E_USER_ERROR);
+		return trigger_error("Lowtone Content plugin is required", E_USER_ERROR) && false;
 
 	Plugin::init(array(
 			Plugin::INIT_PACKAGES => array("lowtone"),
